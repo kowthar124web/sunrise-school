@@ -1,0 +1,102 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 80px; /* Si aysan header-ku u daboolin content-ka */
+    background-color: #f0f0f0;
+}
+
+/* Fixed Header and Navigation */
+header {
+    background-image: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding-right: 70px;
+    font-size: xx-large;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styling - garab garab layout */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Sawir garab taagan */
+.section img {
+    flex: 1 1 40%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Qoraalka garabka sawirka */
+.section-content {
+    flex: 1 1 55%;
+}
+
+.section h2 {
+    color: #004080;
+    margin-top: 0;
+}
+
+.section p,
+.section ul {
+    font-size: 16px;
+    color: #333;
+}
+
+.section ul {
+    margin-left: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-image: url('https://images.unsplash.com/photo-1495567720989-cebdbdd97913');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: 40px;
+}

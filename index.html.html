@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise School</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px; /* Si aysan header-ku u daboolin content-ka */
+            background-color: #f0f0f0;
+        }
+
+        /* Fixed Header and Navigation */
+        header {
+            background-image: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+    .logo img {
+  height: 90px; /* Adjust as needed */
+  width: 90px;
+    }
+
+/* Navigation Links */
+    .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    }
+
+
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 18px;
+            margin-right: 40px;
+        }
+
+        .nav-links li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Section Styling */
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            background-color: white;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 1200px;
+        }
+
+        .section img {
+    flex: 0 0 300px;  /* Sawirka cabbir go’an (ballac 300px) */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.section-content {
+    flex: 1;   /* Qoraalka waxa uu buuxinayaa booska hadhay */
+    margin-left: 0; /* Ka saar margin ka horey u jiray */
+}
+
+/* Responsive - markay width ka hooseyso 768px, sawir iyo qoraal hoos isugu yimaadaan */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column; /* Sawir iyo qoraal hoos isugu yimaadaan */
+        gap: 15px;
+    }
+    
+    .section img {
+        max-width: 100%;
+        width: 100%;
+        height: 500%;
+        flex: none;
+    }
+    
+    .section-content {
+        margin-left: 0;
+    }
+}
+
+
+           
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <header>
+               <a href="logo" class="logo">
+      <img src="download3-removebg-preview.png" alt="Site Logo">
+    </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754" alt="School Building">
+        <div class="section-content">
+            <h2>Welcome to Sunrise School</h2>
+            <p>Sunrise School is a place where students grow into future leaders. We emphasize holistic development through academics, sports, and moral values. With top-tier faculty and facilities, we make sure each student is prepared to succeed in life.</p>
+            <p>Our vision is to create a nurturing environment where every learner can achieve academic excellence, develop life skills, and become a responsible citizen of the world.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc" alt="Classroom Activity">
+        <div class="section-content">
+            <h2>About Us</h2>
+            <p>Founded in 2001, Sunrise School has been a pillar of quality education in the region. Our curriculum balances theory and practice, with extracurriculars ranging from robotics to literature clubs.</p>
+            <p>We believe in continuous growth—for both students and teachers. Regular training, seminars, and workshops keep our staff up-to-date with the latest educational trends.</p>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="section">
+    <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc" alt="Admissions Process" />
+    <div class="section-content">
+        <h2>Admissions</h2>
+        <p>We welcome students from diverse backgrounds. Our admission process is simple, inclusive, and based on merit and potential.</p>
+        
+        <!-- Liiska Tallaabooyinka Admissions -->
+        <h3>Steps to Apply:</h3>
+        <ul>
+            <li>Collect application form online or from the admin office.</li>
+            <li>Submit required documents (birth certificate, previous reports, etc.).</li>
+            <li>Take an entrance assessment (for Grades 2 and above).</li>
+            <li>Attend parent-student interview session.</li>
+        </ul>
+
+        <!-- Jadwalka Admissions -->
+        <h3>Admissions Timeline</h3>
+        <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+            <thead style="background-color: #004080; color: white;">
+                <tr>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Activity</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">Start Date</th>
+                    <th style="padding: 10px; border: 1px solid #ccc;">End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Application Submission</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">June 10, 2025</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">July 5, 2025</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Entrance Assessment</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">July 10, 2025</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">July 12, 2025</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Interview Sessions</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">July 15, 2025</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">July 20, 2025</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ccc;">Final Admission List</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">July 25, 2025</td>
+                    <td style="padding: 10px; border: 1px solid #ccc;">—</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="margin-top: 20px;">Contact us for more information about fees, scholarships, and important dates.</p>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754" alt="School Contact Desk">
+        <div class="section-content">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> info@sunriseschool.edu</p>
+            <p><strong>Phone:</strong> +252 610100103</p>
+            <p><strong>Address:</strong> Sixth Section, Baledhawo, Somalia</p>
+            <p>Follow us on social media for updates and school events!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sunrise School. All rights reserved.</p>
+    </footer>
+</body>
+</html>
